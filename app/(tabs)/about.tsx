@@ -3,7 +3,7 @@ import { StyleSheet, View } from "react-native";
 
 export default function About() {
     return (
-        <View>
+        <View style={styles.container}>
             <Profil />
         </View>
     )
