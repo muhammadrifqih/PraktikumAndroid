@@ -6,7 +6,7 @@ export default function RootLayout() {
             <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
             <Stack.Screen name="details/[id]" options={{
                 headerTitle: "Detail",
-                headerTransparent: false,
+                headerTransparent: true,
                 headerTintColor: "#FFF",
             }} />
         </Stack>
