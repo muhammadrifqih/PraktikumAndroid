@@ -2,6 +2,7 @@ import { StyleSheet, Text, View } from "react-native";
 import { Image } from "expo-image";
 
 type Props = {
+    id: number,
     sumberGambar: string,
     judul: string,
     keterangan: string,
@@ -9,7 +10,7 @@ type Props = {
 
 const PlaceholderImage = require('@/assets/images/08.jpeg');
 
-export default function Card({ sumberGambar, judul, keterangan }: Props) {
+export default function Card({ id, sumberGambar, judul, keterangan }: Props) {
     const imageSource = sumberGambar ? { uri: sumberGambar } : PlaceholderImage;
     return (
         <View style={styles.panel} >
