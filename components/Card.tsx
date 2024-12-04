@@ -13,10 +13,10 @@ export default function Card({ sumberGambar, judul, keterangan }: Props) {
     const imageSource = sumberGambar ? { uri: sumberGambar } : PlaceholderImage;
     return (
         <View style={styles.panel} >
-            <Image style={styles.image} source={"https://mirzayogy.github.io/assets/image/02.jpeg"}></Image>
+            <Image style={styles.image} source={imageSource}></Image>
             <View>
-                <Text style={styles.textWhite}>Senja Mesjid Nabawi</Text>
-                <Text style={styles.textWhiteKecil}>Masjid Nabawi ketika senja melanda</Text>
+                <Text style={styles.textWhite}>{judul}</Text>
+                <Text style={styles.textWhiteKecil}>{keterangan}</Text>
             </View>
         </View >
     )
